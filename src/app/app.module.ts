@@ -9,22 +9,31 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 
-import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
+import { PostannonceComponent } from './postannonce/postannonce.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RegistrationCompComponent } from './registration-comp/registration-comp.component';
+import { LoginComponent } from './login/login.component';
+import { AnnonceproposerComponent } from './annonceproposer/annonceproposer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    PostannonceComponent,
+    RegistrationCompComponent,
+    LoginComponent,
+    AnnonceproposerComponent,
+    
   ],
   imports: [
     BrowserModule,
     NgbModule,
     FormsModule,
     RouterModule,
-    ComponentsModule,
+    HttpClientModule,
     ExamplesModule,
     AppRoutingModule,
   ],
